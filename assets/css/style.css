@@ -1439,16 +1439,6 @@ footer {
         padding-top: 15vh;
     }
 
-    .hero-content h1 {
-        font-size: 2rem !important;
-        padding: 0 1rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem !important;
-        padding: 0 1.5rem;
-    }
-
     .about-grid {
         grid-template-columns: 1fr;
         padding: 0 1rem;
@@ -1591,18 +1581,6 @@ footer {
         width: 100%;
         max-width: 100%;
         padding: 0;
-    }
-
-    .hero-content h1 {
-        font-size: 1.85rem !important;
-        line-height: 1.2;
-        margin-bottom: 1.5rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem !important;
-        line-height: 1.5;
-        margin-bottom: 2rem;
     }
 
     .btn-cta {
