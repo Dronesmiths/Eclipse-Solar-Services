@@ -326,7 +326,7 @@ nav {
 
 /* Footer */
 footer {
-    background-color: var(--accent-color);
+    background-color: #0f172a;
     color: var(--white);
     padding: 5rem 2rem 2rem;
 }
