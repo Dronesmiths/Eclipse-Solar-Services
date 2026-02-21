@@ -278,7 +278,8 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: clamp(4rem, 15vw, 8.5rem);
+    font-size: clamp(2.5rem, 15vw, 8.5rem);
+    /* Reduced minimum from 4rem to 2.5rem for mobile fit */
     color: var(--white);
     margin-bottom: 0.5rem;
     text-shadow: 4px 4px 15px rgba(0, 0, 0, 0.8);
@@ -286,7 +287,11 @@ nav {
     font-weight: 900;
     text-transform: uppercase;
     letter-spacing: -3px;
+    overflow-wrap: break-word;
+    /* Ensure single long words break if needed */
+    hyphens: auto;
 }
+
 
 .hero-content h3 {
     font-size: clamp(1.5rem, 4vw, 3rem);
