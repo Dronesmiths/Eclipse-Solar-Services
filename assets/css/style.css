@@ -256,21 +256,25 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(3rem, 8vw, 5rem);
     color: var(--white);
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    line-height: 1.0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
 
-.hero-content p {
-    font-size: clamp(1.1rem, 2vw, 1.4rem);
-    margin-bottom: 2.5rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 400;
+.hero-content h3 {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
+
 
 /* Features Section */
 .features {
@@ -440,7 +444,7 @@ footer {
 
 /* Why Us Section */
 .why-us {
-    padding: 5rem 2rem;
+    padding: 2.5rem 2rem;
     background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
     text-align: center;
 }
@@ -448,6 +452,25 @@ footer {
 .why-us-content {
     max-width: 800px;
     margin: 0 auto;
+}
+
+.why-us-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.why-us-image img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.why-us-image:hover img {
+    transform: scale(1.03);
 }
 
 .why-us p {
