@@ -275,7 +275,7 @@ nav {
 /* Features Section */
 .features {
     padding: 5rem 2rem;
-    background-color: var(--white);
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
     text-align: center;
 }
 
@@ -441,7 +441,7 @@ footer {
 /* Why Us Section */
 .why-us {
     padding: 5rem 2rem;
-    background-color: var(--white);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
     text-align: center;
 }
 
@@ -813,7 +813,7 @@ footer {
 /* Report & Analytics Dashboard */
 .report-section {
     padding: 8rem 2rem;
-    background-color: var(--white);
+    background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
     text-align: center;
 }
 
