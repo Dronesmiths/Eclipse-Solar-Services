@@ -92,12 +92,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1400px;
+    /* Increased max-width for better desktop feel */
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.75rem 2rem;
 }
 
 .logo {
+    flex: 1;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -136,7 +138,16 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 3rem;
+    flex: 2;
+    justify-content: flex-end;
+    /* Push links and CTA to the right on desktop */
+    align-items: center;
+}
+
+.nav-links li:last-child {
+    margin-left: 1.5rem;
+    /* Space before the CTA button on desktop */
 }
 
 .nav-links li a {
@@ -148,6 +159,11 @@ nav {
 
 .nav-links li a:hover {
     color: var(--primary-color);
+}
+
+/* On desktop, the CTA inside the list should still look like a button */
+.header-cta {
+    display: inline-block;
 }
 
 .menu-toggle {
@@ -195,8 +211,14 @@ nav {
         font-size: 1.1rem;
     }
 
+    .header-cta {
+        display: block !important;
+        /* Always show inside the menu on mobile */
+        margin-top: 1.5rem;
+    }
+
     .btn-cta {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
         display: inline-block;
         width: 100%;
     }
