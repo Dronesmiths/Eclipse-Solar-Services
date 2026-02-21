@@ -1,72 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eclipse Solar Services | Power Your Future</title>
-    <meta name="description" content="Professional solar panel installation and renewable energy solutions. Save money and the planet with Eclipse Solar Services.">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <meta name="description"
+        content="Professional solar panel installation and renewable energy solutions. Save money and the planet with Eclipse Solar Services.">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Header -->
     <header>
         <nav>
-            <a href="#" class="logo">Eclipse<span>Solar</span></a>
+            <a href="index.html" class="logo">
+                <img src="assets/img/logo.webp" alt="Eclipse Solar Services Logo" class="logo-img">
+                <span class="logo-text">Eclipse<span>Solar</span></span>
+            </a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#quote" class="btn-cta">Get a Free Quote</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="tel:661-483-0210" class="btn-cta">Get a Free Quote</a></li>
             </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Power Your Future with Clean Energy</h1>
-            <p>Industry-leading solar solutions for residential and commercial properties. Save on energy costs while building a sustainable tomorrow.</p>
-            <a href="#quote" class="btn-cta">Start Your Journey</a>
+            <h1>Eclipse Solar Services: Utility-Scale Solar O&M & Asset Protection</h1>
+            <p>Maximizing yield for IPPs, Utilities, and Large-Scale Solar Projects. Specialized care for critical
+                energy infrastructure.</p>
+            <a href="tel:661-483-0210" class="btn-cta">Request O&M Proposal</a>
         </div>
     </section>
 
     <!-- Features Section -->
     <section id="services" class="features">
-        <h2>Why Choose Eclipse Solar?</h2>
-        <p>We bring light to your energy needs with efficiency and reliability.</p>
+        <h2>Dedicated to Large-Scale Projects</h2>
+        <p>Industrial-grade solutions for GW-portfolios and massive solar assets.</p>
         <div class="features-grid">
             <div class="feature-card">
-                <i class="fas fa-solar-panel feature-icon"></i>
-                <h3>Premium Panels</h3>
-                <p>High-efficiency photovoltaic panels guaranteed to last for decades.</p>
+                <i class="fas fa-broom feature-icon"></i>
+                <h3>High-Volume Cleaning</h3>
+                <p>Automated and manual cleaning solutions optimized for 50MW+ sites to restore peak generation.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-car-battery feature-icon"></i>
+                <h3>BESS Performance Testing</h3>
+                <p>Advanced diagnostics for Battery Energy Storage Systems supporting grid stability.</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clipboard-check feature-icon"></i>
+                <h3>Commissioning & Inspections</h3>
+                <p>End-of-warranty and commissioning checks for large-scale installations (IEC 62446 compliant).</p>
             </div>
             <div class="feature-card">
                 <i class="fas fa-tools feature-icon"></i>
-                <h3>Expert Installation</h3>
-                <p>Certified technicians ensure a seamless and safe installation process.</p>
+                <h3>Corrective Maintenance</h3>
+                <p>Rapid response repair and component replacement to minimize downtime.</p>
             </div>
             <div class="feature-card">
-                <i class="fas fa-battery-full feature-icon"></i>
-                <h3>Energy Storage</h3>
-                <p>Integrated battery systems to keep your power running even when the grid is down.</p>
+                <i class="fas fa-chart-line feature-icon"></i>
+                <h3>Performance Monitoring</h3>
+                <p>24/7 monitoring and data analysis to detect issues before they impact production.</p>
             </div>
+            <div class="feature-card">
+                <i class="fas fa-leaf feature-icon"></i>
+                <h3>Vegetation Management</h3>
+                <p>Grounds keeping and vegetation control to prevent shading and fire hazards.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="stat-item">
+            <span class="stat-number">500MW+</span>
+            <span class="stat-label">Solar Energy Serviced</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">10M+</span>
+            <span class="stat-label">Sq. Ft. Cleaned</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">OSHA Compliant</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Emergency Response</span>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="why-us">
+        <div class="why-us-content">
+            <h2>Built for Critical Infrastructure</h2>
+            <p>We understand that downtime is not an option. Our industrial-grade maintenance protocols ensure your
+                solar assets operate at peak efficiency, protecting your ROI and extending equipment lifespan.</p>
+            <a href="tel:661-483-0210" class="btn-cta">Schedule a Facility Audit</a>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <h2>Project Execution Workflow</h2>
+        <p>Systematic O&M protocols for utility-grade assets.</p>
+        <div class="process-steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>Site Audit & Safety Plan</h3>
+                <p>We begin with a comprehensive site inspection and develop a site-specific safety protocol compliant
+                    with OSHA standards.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Execution & Testing</h3>
+                <p>Utilization of robotic cleaning systems and advanced diagnostic tools for IV curve tracing and
+                    thermal imaging.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Reporting & Analytics</h3>
+                <p>Receive detailed post-service reports with before/after performance metrics and identifiable anomaly
+                    mapping.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Report Section -->
+    <section class="report-section">
+        <div class="container">
+            <h2>Live Site Analytics Preview</h2>
+            <p class="section-subtitle">Real-time performance metrics and anomaly detection from a 120MW facility.</p>
+
+            <div class="report-dashboard">
+                <div class="dashboard-header">
+                    <div class="site-info">
+                        <span class="site-name"><i class="fas fa-microchip"></i> Site ID: ESS-AZ-402</span>
+                        <span class="site-status"><span class="status-pulse"></span> SYSTEM ACTIVE</span>
+                    </div>
+                    <div class="report-timestamp">Last Updated: <span id="current-timestamp">2026-02-21 07:26</span>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <span class="metric-label">Performance Ratio (PR)</span>
+                        <div class="metric-value">84.2<span>%</span></div>
+                        <div class="metric-trend up"><i class="fas fa-caret-up"></i> 2.1%</div>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Soiling Loss Reduction</span>
+                        <div class="metric-value">12.5<span>%</span></div>
+                        <div class="metric-trend up"><i class="fas fa-caret-up"></i> 4.3%</div>
+                    </div>
+                    <div class="metric-card">
+                        <span class="metric-label">Yield Improvement (Est)</span>
+                        <div class="metric-value">6.8<span>MWh</span></div>
+                        <div class="metric-trend up"><i class="fas fa-caret-up"></i> 0.5%</div>
+                    </div>
+                    <div class="metric-card warning">
+                        <span class="metric-label">Identified Anomalies</span>
+                        <div class="metric-value">03</div>
+                        <div class="metric-trend status">Pending Review</div>
+                    </div>
+                </div>
+
+                <div class="dashboard-body">
+                    <div class="health-map-container">
+                        <h3>Sub-Field Anomaly Mapping</h3>
+                        <div class="health-map">
+                            <!-- Array of panels representing a field -->
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel alert" data-tooltip="String A7: Hotspot Detected"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel alert" data-tooltip="Inverter #3: Low Efficiency"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel healthy"></div>
+                            <div class="field-panel alert" data-tooltip="String C2: Potential Diode Failure"></div>
+                            <div class="field-panel healthy"></div>
+                        </div>
+                        <div class="map-legend">
+                            <span class="legend-item"><span class="box healthy"></span> Healthy</span>
+                            <span class="legend-item"><span class="box alert"></span> Action Required</span>
+                        </div>
+                    </div>
+
+                    <div class="generation-stats">
+                        <h3>Yield Analysis (Last 24h)</h3>
+                        <div class="stats-viz">
+                            <div class="stat-bar" style="height: 30%"></div>
+                            <div class="stat-bar" style="height: 45%"></div>
+                            <div class="stat-bar" style="height: 70%"></div>
+                            <div class="stat-bar highlight" style="height: 95%"></div>
+                            <div class="stat-bar highlight" style="height: 85%"></div>
+                            <div class="stat-bar" style="height: 60%"></div>
+                            <div class="stat-bar" style="height: 40%"></div>
+                        </div>
+                        <p class="stats-info">Peak Generation at 13:42 Local Time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Placeholder -->
+    <section class="partners">
+        <h2>Trusted Industry Partners</h2>
+        <div class="partners-logos">
+            <div class="partner-logo">SOLAR MFG</div>
+            <div class="partner-logo">ENERGY CORP</div>
+            <div class="partner-logo">GRID SOLUTIONS</div>
+            <div class="partner-logo">GREEN TECH</div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <p class="section-subtitle">Trusted by industry leaders for utility-scale solar excellence.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Eclipse Solar transformed how we manage our energy assets. Their robotic cleaning
+                        systems are a game-changer for our utility-scale installations."</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span class="name">Sarah Jenkins</span>
+                            <span class="title">Operations Manager, GreenEra Power</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"The level of detail in their site audits and safety plans is unmatched. We feel
+                        confident knowing our infrastructure is in expert hands."</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span class="name">David Chen</span>
+                            <span class="title">Technical Director, Solar Horizon</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote">"Professional, efficient, and technologically advanced. Eclipse Solar is our go-to
+                        partner for all O&M services."</p>
+                    <div class="author">
+                        <div class="author-info">
+                            <span class="name">Marcus Thorne</span>
+                            <span class="title">CEO, GridSolutions Inc.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Power Your Future?</h2>
+            <p>Join the movement toward sustainable, utility-scale renewable energy. Our commercial team is ready to
+                design your optimal solar strategy.</p>
+            <a href="tel:661-483-0210" class="btn-cta">Get a Free Quote</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer id="contact">
-        <p>&copy; 2026 Eclipse Solar Services. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-column footer-about">
+                <div class="footer-logo">
+                    <img src="assets/img/logo.webp" alt="Eclipse Solar Services Logo" class="logo-img">
+                </div>
+                <p>Providing industrial-grade solar asset protection and maintenance services throughout California.
+                    Expert solutions for utility-scale renewable energy infrastructure.</p>
+            </div>
+            <div class="footer-column footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-user"></i> Kenny</p>
+                <p><i class="fas fa-phone"></i> <a href="tel:6614830210"
+                        style="color: inherit; text-decoration: none;">661-483-0210</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> Locations throughout CA</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Eclipse Solar Services. All rights reserved.</p>
+        </div>
     </footer>
+
+    <!-- Lead Capture Popup -->
+    <div class="popup-overlay" id="lead-popup">
+        <div class="promo-popup">
+            <span class="popup-close" id="close-popup">&times;</span>
+            <div class="popup-image-container">
+                <img src="assets/img/popup-drone.png" alt="Industrial Drone Inspection" class="popup-drone-img">
+            </div>
+            <div class="popup-content-inner">
+                <i class="fas fa-file-invoice-dollar popup-card-icon"></i>
+                <h2>Request a Premium O&M Proposal</h2>
+                <p>Maximize your asset's yield with utility-grade diagnostics and maintenance. Our specialists are ready
+                    to
+                    design your optimal solar strategy.</p>
+                <a href="tel:661-483-0210" class="btn-cta">Call Kenny Direct</a>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
