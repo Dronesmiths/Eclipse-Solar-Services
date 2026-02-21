@@ -13,17 +13,21 @@
     --font-body: 'Roboto', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+html,
 body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
     font-family: var(--font-body);
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--light-bg);
+    -webkit-overflow-scrolling: touch;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 h1,
@@ -107,9 +111,10 @@ nav {
 }
 
 .logo-text {
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
     font-weight: 700;
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .logo-text span {
@@ -154,6 +159,15 @@ nav {
 
 /* Mobile Responsive Header */
 @media (max-width: 768px) {
+    nav {
+        padding: 0.75rem 1.25rem;
+    }
+
+    .logo-img {
+        height: 55px;
+        /* Scaled down for mobile navigation */
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -178,22 +192,28 @@ nav {
     }
 
     .logo-text {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .btn-cta {
         margin-top: 1rem;
+        display: inline-block;
+        width: 100%;
     }
 }
 
 .btn-cta {
     background-color: var(--secondary-color);
     color: var(--accent-color);
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 2rem;
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
     transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }
 
 .btn-cta:hover {
@@ -261,14 +281,14 @@ nav {
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 3rem auto 0;
 }
 
 .feature-card {
-    padding: 3.5rem 2.5rem;
+    padding: 3.5rem 1.5rem;
     border-radius: 20px;
     background: var(--white);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -278,6 +298,7 @@ nav {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    width: 100%;
 }
 
 .feature-card:hover {
@@ -452,11 +473,15 @@ footer {
 
 .step-card {
     background: var(--white);
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 2.5rem 1.5rem;
+    border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    max-width: 300px;
+    max-width: 100%;
+    width: 100%;
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
 }
 
@@ -600,6 +625,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
+    padding: 0 1.5rem;
+    position: relative;
+    overflow: hidden;
 }
 
 /* CTA Section */
@@ -698,7 +726,7 @@ footer {
 
 .service-benefits-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
     margin-top: 4rem;
 }
@@ -1096,7 +1124,7 @@ footer {
 
 .compliance-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 3rem;
     max-width: 1100px;
     margin: 5rem auto 0;
@@ -1104,12 +1132,16 @@ footer {
 
 .compliance-item {
     background: rgba(255, 255, 255, 0.03);
-    padding: 3.5rem 2.5rem;
+    padding: 3rem 1.5rem;
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
-    text-align: left;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .compliance-item:hover {
@@ -1309,7 +1341,7 @@ footer {
 
 .about-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 4rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -1325,6 +1357,8 @@ footer {
     text-align: center;
     position: relative;
     overflow: hidden;
+    width: 100%;
+    max-width: 100%;
 }
 
 .about-card:hover {
@@ -1375,16 +1409,83 @@ footer {
 @media (max-width: 768px) {
     .hero {
         height: 85vh !important;
-        min-height: 480px;
-        margin-top: 60px;
+        min-height: 400px;
+        margin-top: 70px;
+        padding-top: 15vh;
     }
 
     .hero-content h1 {
-        font-size: 2.25rem !important;
+        font-size: 2rem !important;
+        padding: 0 1rem;
     }
 
     .hero-content p {
         font-size: 1rem !important;
+        padding: 0 1.5rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .about-card {
+        padding: 3rem 1.5rem;
+    }
+
+    .features {
+        padding: 4rem 1rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .process-steps {
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .step-card {
+        flex: none;
+        width: 100%;
+        max-width: 100%;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .stat-item {
+        width: 100%;
+        min-width: 100%;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .compliance-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+        gap: 2rem;
+    }
+
+    .compliance-item {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .service-benefits-grid,
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        padding: 0 1rem;
+    }
+
+    h2::after {
+        width: 60px;
     }
 }
 
@@ -1444,8 +1545,83 @@ footer {
     padding: 2rem 2.5rem 3rem;
 }
 
-.popup-overlay.active .promo-popup {
-    transform: scale(1) translateY(0);
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1.25rem;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero {
+        height: 90vh !important;
+        min-height: 480px;
+        padding: 120px 1.25rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 0;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.85rem !important;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem !important;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+
+    .btn-cta {
+        width: 100% !important;
+        max-width: 320px;
+        padding: 1rem !important;
+        font-size: 1rem !important;
+        margin: 0 auto;
+    }
+
+    .stat-item {
+        width: 100% !important;
+        margin: 1rem 0;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .about-card {
+        padding: 2.5rem 1.5rem !important;
+        width: 100% !important;
+    }
+
+    .features-grid,
+    .about-grid,
+    .compliance-grid,
+    .service-benefits-grid,
+    .testimonials-grid,
+    .process-steps {
+        grid-template-columns: 1fr !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0;
+    }
+
+    .feature-card,
+    .step-card,
+    .compliance-item,
+    .benefit-card,
+    .testimonial-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-bottom: 0;
+    }
 }
 
 .popup-close {
